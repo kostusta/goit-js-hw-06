@@ -9,7 +9,7 @@ const createIngredientsList = ingredients => {
   });
 };
 
-const ingredientsList = createIngredientsList(ingredients);
+const ingredientsItemsList = createIngredientsList(ingredients);
 
 const ingredientsList = document.getElementById('ingredients');
-ingredientsList.append(...ingredientsList);
+ingredientsList.append(...ingredientsItemsList);
