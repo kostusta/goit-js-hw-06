@@ -11,5 +11,5 @@ const createIngredientsList = ingredients => {
 
 const ingredientsItemsList = createIngredientsList(ingredients);
 
-const ingredientsList = document.getElementById('ingredients');
-ingredientsList.append(...ingredientsItemsList);
+const ingredientsRef = document.getElementById('ingredients');
+ingredientsRef.append(...ingredientsItemsList);
