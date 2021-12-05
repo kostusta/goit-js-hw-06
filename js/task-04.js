@@ -5,7 +5,7 @@ const incrementBtnRef = document.querySelector('button[data-action="increment"]'
 const valueRef = document.getElementById('value');
 
 const counterValueClickHandler = event => {
-  if (event.target.dataset.action === 'decrement') {
+  if (event.currentTarget.dataset.action === 'decrement') {
     counterValue -= 1;
   } else if (event.target.dataset.action === 'increment') {
     counterValue += 1;
