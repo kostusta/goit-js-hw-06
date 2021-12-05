@@ -1,8 +1,10 @@
-const rangeInputRef = document.getElementById('font-size-control');
-const spanRef = document.getElementById('text');
-
-const rangeInputInputHandler = event => {
-  spanRef.style.fontSize = `${event.currentTarget.value}px`;
+const refs = {
+  rangeInputRef: document.getElementById('font-size-control'),
+  spanRef: document.getElementById('text'),
 };
 
-rangeInputRef.addEventListener('input', rangeInputInputHandler);
+const rangeInputInputHandler = event => {
+  refs.spanRef.style.fontSize = `${event.currentTarget.value}px`;
+};
+
+refs.rangeInputRef.addEventListener('input', rangeInputInputHandler);
