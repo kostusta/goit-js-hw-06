@@ -1,0 +1,21 @@
+.gallery{
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery__item{
+  flex-basis: calc(100% / 3 - 20px);
+}
+
+.gallery__item:not(:last-child){
+  margin-right: 20px;
+}
+
+.gallery__img{
+  display: inline-block;
+  max-width: 100%;
+}
