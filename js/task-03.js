@@ -15,12 +15,12 @@ const images = [
 
 const galleryRef = document.querySelector('.gallery');
 
+const makeGalleryItemElement = image => {
+  return `<li class='gallery__item'><img class='gallery__img' src='${image.url}'' alt='${image.alt}'></li>`;
+};
+
 const makeGalleryMarkup = images => {
-  return images
-    .map(image => {
-      return `<li class='gallery__item'><img class='gallery__img' src='${image.url}'' alt='${image.alt}'></li>`;
-    })
-    .join('');
+  return images.map(makeGalleryItemElement).join('');
 };
 
 const markup = makeGalleryMarkup(images);

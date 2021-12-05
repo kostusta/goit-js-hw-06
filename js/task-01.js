@@ -1,4 +1,5 @@
 const categoriesRef = document.querySelectorAll('#categories > .item');
+
 console.log(`Number of categories: ${categoriesRef.length}`);
 
 categoriesRef.forEach(category => {
