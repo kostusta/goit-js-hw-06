@@ -21,7 +21,6 @@ const createBoxes = () => {
   }
 
   const resultMarkupString = markupArray.join('');
-  console.log(resultMarkupString);
   refs.boxesRef.insertAdjacentHTML('afterbegin', resultMarkupString);
   refs.numberRef.value = '';
 };
