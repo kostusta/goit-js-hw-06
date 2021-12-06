@@ -1,7 +1,7 @@
 const inputRef = document.getElementById('validation-input');
 
 const inputSymbolsCountHandler = event => {
-  if (event.currentTarget.value.split('').length >= Number(event.currentTarget.dataset.length)) {
+  if (event.currentTarget.value.split('').length === Number(event.currentTarget.dataset.length)) {
     event.currentTarget.classList.add('valid');
     event.currentTarget.classList.remove('invalid');
   } else {

@@ -10,10 +10,9 @@ const formSubmitHandler = event => {
   if (!(email.value && password.value)) {
     alert('All form fields must be completed.');
   } else {
-    console.log(`Emaiil: ${email.value}\nPassword: ${password.value}`);
+    console.log({ email: email.value, password: password.value });
     event.currentTarget.reset();
   }
 };
 
 formRef.addEventListener('submit', formSubmitHandler);
-
